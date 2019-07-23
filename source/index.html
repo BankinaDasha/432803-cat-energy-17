@@ -3,29 +3,28 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="page-header">
 
-        <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="http://placehold.it/40x40" alt="лого cat enegy">
-        </a>
-        <a class="page-header__text-logo" href="#">
-            <img class="page-header__text-logo-image" src="http://placehold.it/100x40" alt="лого тект">
+        <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg"  width="191px" height="39px" alt="лого cat enegy">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
+                    <li class="main-nav__item main-nav__item--active title-nav">
                         <a href="index.html">Главная</a>
                     </li>
-                    <li class="site-list__item site-list__item--active">
+                    <li class="main-nav__item main-nav__item--active title-nav">
                         <a href="catalog.html">Каталог продукции</a>
                     </li>
-                    <li class="site-list__item site-list__item--active">
+                    <li class="main-nav__item main-nav__item--active title-nav">
                         <a href="form.html">Подбор программы</a>
                     </li>
                 </ul>
@@ -33,29 +32,28 @@
         </nav>
     </header>
     <main class="page-main">
-        <h1 class="page-main__title">HTML Academy: Кэт энерджи</h1>
         <section class="promo">
 
-            <h2 class="page-main__title">Функциональное питание для котов</h2>
-            <p class="page-main__text">Занялся собой? Займись котом!</p>
-            <img class="page-main__image" src="http://placehold.it/150x100" alt="Баночка Cat energy pro, 500гр">
-            <a class="header-button header-button--active" href="form.html">Подобрать программу</a>
+            <h2 class="promo__title title-section">Функциональное питание для котов</h2>
+            <p class="promo__text">Занялся собой? Займись котом!</p>
+            <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Баночка Cat energy pro, 500гр">
+            <a class="promo__button promo__button--active btn" href="form.html">Подобрать программу</a>
         </section>
         <section class="categories">
-            <div class="categories-item categories-item--slimming">
-                <a href="#" class="categories-item__title">Похудение</a>
-                <p class="categories-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="categories-item__button categories-item__button--active" href="#">Каталог Slim</a>
+            <div class="categories__item categories__item--slimming">
+                <a href="#" class="categories__item-title title-block">Похудение</a>
+                <p class="categories__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a class="categories__item-button categories__item-button--active title-content" href="#">Каталог Slim</a>
             </div>
-            <div class="categories-item categories-item--weight-gain">
-                <a href="#" class="categories-item__title">Набор массы</a>
-                <p class="categories-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="categories-item__button categories-item__button--active" href="#">Каталог pro</a>
+            <div class="categories__item categories__item--weight-gain">
+                <a href="#" class="categories__item--title title-block">Набор массы</a>
+                <p class="categories__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a class="categories__item_-button categories__item-button--active title-content" href="#">Каталог pro</a>
             </div>
         </section>
         <section class="advantages">
             <div class="advantages__wrapper">
-                <h2 class="advantages__title">Как это работает</h2>
+                <h2 class="advantages__title title-section">Как это работает</h2>
                 <ul class="advantages__list">
                     <li class="advantages__item advantages__item--health">Функциональное питание содержит только полезные питательные вещества.</li>
                     <li class="advantages__item advantages__item--cook">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -65,32 +63,31 @@
             </div>
         </section>
     </main>
-        <footer class="page-footer">
-            <a class="page-footer__logo" href="#">
-                <img class="page-footer__logo-image" src="http://placehold.it/40x40" width="226" height="30" alt="лого catenegy">
+    <footer class="page-footer">
+        <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="лого catenegy">
+        </a>
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vkontakte social__link--active" href="#"></a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook social__link--active" href="#"></a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--instagram social__link--active" href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <a class="page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
+                <p class="page-footer__copyright-text">HTML Academy</p>
+                <img class="page-footer__copyright-image page-footer__copyright-active" src="img/htmlacademy.svg" width="27px" height="34px" alt="лого html-academy">
             </a>
-            <div class="page-footer__social social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link social__link--vkontakte social__link--active" href="#"></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook social__link--active" href="#"></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--instagram social__link--active" href="#"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__copyright copyright">
-                <a class="page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
-                    <p class="page-footer__copyright-text">HTML Academy</p>
-                    <img class="page-footer__copyright-image page-footer__copyright-active" src="http://placehold.it/40x40" alt="лого html-academy">
-                </a>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
-    
 </body>
 
 </html>

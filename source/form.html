@@ -3,62 +3,128 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
     <header class="page-header">
 
-        <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="http://placehold.it/40x40" alt="лого cat enegy">
-        </a>
-        <a class="page-header__text-logo" href="#">
-            <img class="page-header__text-logo-image" src="http://placehold.it/100x40" alt="лого тект">
+        <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg"  width="191px" height="39px" alt="лого cat enegy">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
+                    <li class="main-nav__item main-nav__item--active title-nav">
                         <a href="index.html">Главная</a>
                     </li>
-                    <li class="site-list__item site-list__item--active">
+                    <li class="main-nav__item main-nav__item--active title-nav">
                         <a href="catalog.html">Каталог продукции</a>
                     </li>
-                    <li class="site-list__item site-list__item--active">
+                    <li class="main-nav__item main-nav__item--active title-nav">
                         <a href="form.html">Подбор программы</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>   
+    <main>
+        <section class="form-page">
+            <h1 class="form-page__title title-section">Подбор программы</h1>
+            <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <form action="#" name="user-form">
+                <dl>
+                    <dt>
+                            <label for="user-name">Имя*</label>
+                          </dt>
+                    <dd>
+                        <input type="text" id="user-name" name="user-name" value="" />
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                            <label for="user-weight">Вес (кг):*</label>
+                          </dt>
+                    <dd>
+                        <input type="text" id="user-weight" name="user-weight" value="" />
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                            <label for="user-age">Возраст(лет):*</label>
+                          </dt>
+                    <dd>
+                        <input type="text" id="user-age" name="user-age" value="" />
+                    </dd>
+                </dl>
+                <input type="radio" id="losing-weight">
+                <label for="losing-weight">Похудение</label>
+                <input type="radio" id="add-mass">
+                <label for="add-mass">Набор массы</label>
+                <input type="radio" id="advice">
+                <label for="advice">Нужен совет</label>
+                <p>Контактые данные(владельца кота)</P>
+                <dl>
+                    <dt>
+                            <label for="user-email">E-mail:*</label>
+                          </dt>
+                    <dd>
+                        <input type="text" id="user-email" name="user-email" value="" />
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                            <label for="user-tel">Телефон:*</label>
+                          </dt>
+                    <dd>
+                        <input type="text" id="user-tel" name="user-tel" value="" />
+                    </dd>
+                </dl>
+                <p>Комментарий</p>
+                <textarea name="расскажите обо всех повадках кота" cols="40" rows="3"></textarea>
+                <p>Дополнительно</p>
+                <input type="radio" id="sugar-no">
+                <label for="sugar-no">Сахарозаменитель</label>
+                <input type="radio" id="water">
+                <label for="water">Питьевая вода</label>
+                <input type="radio" id="milk">
+                <label for="milk">Молоко</label>
+                <input type="radio" id="vitamin">
+                <label for="vitamin">Витамины</label>
+                <input type="submit" value="Отправить заявку">
+                <p>* - Обязательные поля</p>
+            </form>
+        </section>
     </main>
- 
-        <footer class="page-footer">
-            <a class="page-footer__logo" href="#">
-                <img class="page-footer__logo-image" src="http://placehold.it/40x40" width="226" height="30" alt="лого catenegy">
+    </main>
+
+    <footer class="page-footer">
+        <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="лого catenegy">
+        </a>
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vkontakte social__link--active" href="#"></a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook social__link--active" href="#"></a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--instagram social__link--active" href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <a class="page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
+                <p class="page-footer__copyright-text">HTML Academy</p>
+                <img class="page-footer__copyright-image page-footer__copyright-active" src="img/htmlacademy.svg" width="27px" height="34px" alt="лого html-academy">
             </a>
-            <div class="page-footer__social social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link social__link--vkontakte social__link--active" href="#"></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook social__link--active" href="#"></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--instagram social__link--active" href="#"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__copyright copyright">
-                <a class="page-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive">
-                    <p class="page-footer__copyright-text">HTML Academy</p>
-                    <img class="page-footer__copyright-image page-footer__copyright-active" src="http://placehold.it/40x40" alt="лого html-academy">
-                </a>
-            </div>
-        </footer>
+        </div>
+    </footer>
 </body>
 
 </html>
