@@ -10,7 +10,100 @@
   padding: 20px;
 }
 
+.categories__item-title {
+  padding-left: 90px;
+}
+
+.categories__item--slimming {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: @btn-color;
+    border-radius: 50%;
+    margin-left: 650px;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 49px;
+    margin-left: 650px;
+    position: absolute;
+  }
+}
+
+.categories__item--weight-gain {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 650px;
+    background: @btn-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+    margin-left: 600px;
+    margin-top: 50px;
+    position: absolute;
+  }
+}
+
 .categories__item-description {
   border-bottom: solid 1px #d9d9d9;
   padding-bottom: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .categories__item--description {
+    border-bottom: none;
+    max-width: 400px;
+    font-size: 16px;
+    padding-bottom: 45px;
+  }
+
+  .categories__item--slimming {
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      content: "";
+      width: 141px;
+      height: 194px;
+    }
+  }
+
+  .categories__item--weight-gain {
+    &::before {
+      content: "";
+      margin-right: 63px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      content: "";
+      width: 268px;
+      height: 113px;
+    }
+  }
 }

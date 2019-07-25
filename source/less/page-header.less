@@ -1,3 +1,29 @@
 .page-header__logo-image {
   width: 190px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      height: 695px;
+      width: 720px;
+      top: 1px;
+      right: 1px;
+    }
+  }
+}

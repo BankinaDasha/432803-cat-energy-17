@@ -7,3 +7,39 @@
   text-align: center;
   padding-bottom: 15px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-cart {
+    width: 245px;
+    background-color: #f2f2f2;
+    position: relative;
+    padding: 38px;
+    text-align: center;
+    padding-left: 60px;
+  }
+
+
+  .product-cart__photo {
+    position: absolute;
+    top: -50px;
+    right: 80px;
+    left: 80px;
+  }
+
+  .product-cart__item-name,
+  .product-cart__item-info {
+    font-size: 16px;
+  }
+
+  .product-cart__title {
+    padding-top: 165px;
+    font-size: 20px;
+  }
+}

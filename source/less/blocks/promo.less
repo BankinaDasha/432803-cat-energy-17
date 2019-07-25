@@ -17,6 +17,8 @@
   line-height: 36px;
   padding-top: 30px;
   margin-top: 0;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 .promo__text {
@@ -29,4 +31,38 @@
   background-color: @btn-color;
   padding: 15px 75px;
   color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: none;
+    color: #111111;
+    font-size: 20px;
+    padding-left: 120px;
+    text-align: left;
+    height: 850px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 1;
+    max-width: 450px;
+  }
+
+  .promo__image {
+    position: absolute;
+    bottom: 0;
+    top: 341px;
+    right: 500px;
+  }
+
+  .promo__text {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .promo__button {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
 }

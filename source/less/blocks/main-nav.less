@@ -2,12 +2,50 @@
   font-family: "oswaldmedium", sans-serif;
   list-style-type: none;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: 1px;
 }
 
 .main-nav__item {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: solid 1px #e6e6e6;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    border-bottom: none;
+    padding-left: 20px;
+  }
+
+  .main-nav__item--active {
+    border-bottom: solid 2px @btn-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item {
+    color: white;
+  }
+
+  .main-nav__item--active {
+    border-bottom: solid 2px white;
+  }
 }
