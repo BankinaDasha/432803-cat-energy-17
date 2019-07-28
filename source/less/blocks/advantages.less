@@ -10,4 +10,123 @@
 .advantages__item {
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 32px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: @btn-color;
+    left: -80px;
+  }
+}
+
+
+.advantages__item--health {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -75px;
+    top: 20px;
+    position: absolute;
+  }
+}
+
+.advantages__item--cook {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -75px;
+    top: 20px;
+    position: absolute;
+  }
+}
+
+.advantages__item--meal {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -75px;
+    top: 20px;
+    position: absolute;
+  }
+}
+
+.advantages__item--clock {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -75px;
+    top: 20px;
+    position: absolute;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 300px;
+    height: 228px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: -80px;
+    }
+  }
+
+  .advantages__item--health {
+    &::after {
+      top: 27px;
+      left: -63px;
+    }
+  }
+
+  .advantages__item--cook {
+    &::after {
+      top: 27px;
+      left: -63px;
+    }
+  }
+
+  .advantages__item--meal {
+    &::after {
+      top: 27px;
+      left: -63px;
+    }
+  }
+
+  .advantages__item--clock {
+    &::after {
+      top: 27px;
+      left: -63px;
+    }
+  }
 }

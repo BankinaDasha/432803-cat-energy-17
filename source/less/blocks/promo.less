@@ -16,7 +16,6 @@
   font-weight: 400;
   line-height: 36px;
   padding-top: 30px;
-  margin-top: 0;
 }
 
 .promo__text {
@@ -27,6 +26,49 @@
 
 .promo__button {
   background-color: @btn-color;
-  padding: 15px 75px;
+  padding: 15px 60px;
   color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    color: #111111;
+    font-size: 20px;
+    padding-left: 120px;
+    text-align: left;
+    height: 850px;
+    background-position: bottom;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 1;
+    max-width: 450px;
+  }
+
+  .promo__image {
+    display: none;
+  }
+
+  .promo__text {
+    margin-bottom: 40px;
+  }
+
+  .promo__button {
+    padding: 15px 25px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .promo__title {
+    padding-top: 226px;
+  }
 }

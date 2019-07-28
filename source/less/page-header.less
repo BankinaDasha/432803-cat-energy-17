@@ -1,3 +1,18 @@
 .page-header__logo-image {
   width: 190px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    margin-bottom: -200px;
+  }
+}
