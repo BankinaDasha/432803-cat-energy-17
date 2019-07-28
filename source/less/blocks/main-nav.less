@@ -12,6 +12,29 @@
   border-bottom: solid 1px #e6e6e6;
 }
 
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  background-image: url("../../img/icon-mobile-menu.svg");
+  width: 25px;
+  height: 19px;
+  background-color: white;
+  border: none;
+}
+
+.main-nav__toggle:hover {
+  background-image: url("../../img/icon-close.svg");
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     display: flex;
@@ -41,7 +64,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__item {
+  .main-nav__item a {
     color: white;
   }
 
