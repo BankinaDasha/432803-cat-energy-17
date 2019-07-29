@@ -1,21 +1,20 @@
 .promo {
-  background-image: url("../img/index-background-mobile@1x.jpg ");
+  background-image: url("../img/index-background-mobile@1x.jpg "), linear-gradient(#64a83b 305px, white 305px);
   color: white;
   background-repeat: no-repeat;
   background-position: top;
   text-decoration: none;
   text-align: center;
   margin-bottom: 30px;
-}
-
-.ppromo__image {
-  margin-bottom: 29px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .promo__title {
   font-weight: 400;
   line-height: 36px;
   padding-top: 30px;
+  margin: 0;
 }
 
 .promo__text {
@@ -25,20 +24,21 @@
 }
 
 .promo__button {
+  display: block;
   background-color: @btn-color;
   padding: 15px 60px;
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
-    background-image: url("../../img/index-can-tablet@1x.jpg");
     color: #111111;
     font-size: 20px;
-    padding-left: 120px;
     text-align: left;
     height: 850px;
-    background-position: bottom;
+    background: none;
   }
 
   .promo__title {
@@ -48,22 +48,28 @@
   }
 
   .promo__image {
-    display: none;
+    height: 609px;
+    width: 709px;
   }
 
   .promo__text {
     margin-bottom: 40px;
+    position: relative;
   }
 
   .promo__button {
+    position: absolute;
+    display: inline-block;
     padding: 15px 25px;
     font-size: 20px;
+    left: 110px;
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top right;
   }
