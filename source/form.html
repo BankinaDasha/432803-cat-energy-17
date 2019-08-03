@@ -14,24 +14,24 @@
         <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-image" src="img/logo-mobile.svg"  width="191px" height="39px" alt="лого cat enegy">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open main-nav--close">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="main-nav__item main-nav__item--active title-nav">
+                    <li class="main-nav__item title-nav">
                         <a href="index.html">Главная</a>
                     </li>
-                    <li class="main-nav__item main-nav__item--active title-nav">
+                    <li class="main-nav__item title-nav">
                         <a href="catalog.html">Каталог продукции</a>
                     </li>
-                    <li class="main-nav__item main-nav__item--active title-nav">
-                        <a href="form.html">Подбор программы</a>
+                    <li class="main-nav__item title-nav">
+                        <a class="main-nav__item-link--active" href="form.html">Подбор программы</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="wrap">
         <section class="form-page">
             <h1 class="form-page__title title-section">Подбор программы</h1>
             <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>

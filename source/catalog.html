@@ -12,7 +12,7 @@
     <header class="page-header">
 
         <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg"  width="191px" height="39px" alt="лого cat enegy">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="лого cat enegy">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -21,8 +21,8 @@
                     <li class="main-nav__item title-nav">
                         <a href="index.html">Главная</a>
                     </li>
-                    <li class="main-nav__item main-nav__item--active title-nav">
-                        <a href="catalog.html">Каталог продукции</a>
+                    <li class="main-nav__item title-nav">
+                        <a class="main-nav__item-link--active" href="catalog.html">Каталог продукции</a>
                     </li>
                     <li class="main-nav__item title-nav">
                         <a href="form.html">Подбор программы</a>
@@ -31,12 +31,18 @@
             </div>
         </nav>
     </header>
-    <main class="page-main">
+    <main class="wrap">
         <h1 class="catalog__title title-section">Каталог продукции</h1>
         <ul class="catalog">
             <li class="product-cart">
                 <a href="#"><h3 class="product-cart__title title-content">Cat Energy PRO 500 г</h3></a>
-                <a href="#"><img class="product-cart__photo" src="img/chicken-small-mobile@1x.jpg" alt="Пачка Cat Energy PRO 500 г"></a>
+                <a href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Пачка Cat Energy PRO 500 г">
+                    </picture>
+                </a>
                 <table class="product-cart__list">
                     <tr>
                         <td class="product-cart__item-name">Объем</td>
@@ -56,8 +62,15 @@
 
             <li class="product-cart">
                 <a class="product-cart__link" href="#"><h3 class="product-cart__title title-content">Cat Energy PRO 1000 г</h3></a>
-                <a class="product-cart__link" href="#"><img class="product-cart__photo" src="img/chicken-big-mobile@1x.jpg" alt="Пачка Cat Energy PRO 1000 г"></a>
+                <a class="product-cart__link" href="#">
 
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Пачка Cat Energy PRO 1000 г">
+
+                    </picture>
+                </a>
                 <table class="product-cart__list">
                     <tr>
                         <td class="product-cart__item-name">Объем</td>
@@ -77,7 +90,13 @@
 
             <li class="product-cart">
                 <a class="product-cart__link" href="#"><h3 class="product-cart__title title-content">Cat Energy PRO 500 г</h3></a>
-                <a class="product-cart__link" href="#"><img class="product-cart__photo" src="img/fish-small-mobile@1x.jpg" alt="Пачка Cat Energy PRO 500 г"></a>
+                <a class="product-cart__link" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Пачка Cat Energy PRO 500 г">
+                    </picture>
+                </a>
                 <table class="product-cart__list">
                     <tr>
                         <td class="product-cart__item-name">Объем</td>
@@ -96,7 +115,14 @@
             </li>
             <li class="product-cart">
                 <a class="product-cart__link" href="#"><h3 class="product-cart__title title-content">Cat Energy PRO 1000 г</h3></a>
-                <a class="product-cart__link" href="#"><img class="product-cart__photo" src="img/fish-big-mobile@1x.jpg" alt="Пачка Cat Energy PRO 1000 г"></a>
+                <a class="product-cart__link" href="#">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Пачка Cat Energy PRO 1000 г">
+                    </picture>
+                </a>
                 <table class="product-cart__list">
                     <tr>
                         <td class="product-cart__item-name">Объем</td>
@@ -115,7 +141,13 @@
             </li>
             <li class="product-cart">
                 <a class="product-cart__link" href="#"><h3 class="product-cart__title title-content">Cat Energy Slim 500 г</h3></a>
-                <a class="product-cart__link" href="#"><img class="product-cart__photo" src="img/buckwheat-small-mobile@1x.jpg" alt="Пачка Cat Energy Slim 500 г"></a>
+                <a class="product-cart__link" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Пачка Cat Energy Slim 500 г">
+                    </picture>
+                </a>
 
                 <table class="product-cart__list">
                     <tr>
@@ -135,7 +167,14 @@
             </li>
             <li class="product-cart">
                 <a class="product-cart__link" href="#"><h3 class="product-cart__title title-content">Cat Energy Slim 1000 г</h3></a>
-                <a class="product-cart__link" href="#"><img class="product-cart__photo" src="img/buckwheat-big-mobile@1x.jpg" alt="Пачка Cat Energy Slim 1000 г"></a>
+                <a class="product-cart__link" href="#">
+
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Пачка Cat Energy Slim 1000 г">
+                    </picture>
+                </a>
                 <table class="product-cart__list">
                     <tr>
                         <td class="product-cart__item-name">Объем</td>
@@ -154,7 +193,13 @@
             </li>
             <li class="product-cart">
                 <a class="product-cart__link" href="#"><h3 class="product-cart__title title-content">Cat Energy Slim 500 г</h3></a>
-                <a class="product-cart__link" href="#"><img class="product-cart__photo" src="img/rice-small-mobile@1x.jpg" alt="Пачка Cat Energy Slim 500 г"></a>
+                <a class="product-cart__link" href="#">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                        <img class="product-cart__photo" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@1x.jpg 2x" alt="Пачка Cat Energy Slim 500 г">
+                    </picture>
+                </a>
 
                 <table class="product-cart__list">
                     <tr>
@@ -172,12 +217,12 @@
                 </table>
                 <a href="#" class="button product-cart__button  product-cart__button--active btn">Заказать</a>
             </li>
-                <li class="product-cart">
-                    <p class="catalog-all__title title-content"> Показать еще 100500 товаров</p>
-                    <p class="catalog-all__text"> На самом деле вкусов гораздо больше!</p>
-                    <a class="catalog-all__see button" href="#">Показать все</a>
+            <li class="product-cart">
+                <p class="catalog-all__title title-content"> Показать еще 100500 товаров</p>
+                <p class="catalog-all__text"> На самом деле вкусов гораздо больше!</p>
+                <a class="catalog-all__see button" href="#">Показать все</a>
 
-                </li>
+            </li>
 
             </li>
 

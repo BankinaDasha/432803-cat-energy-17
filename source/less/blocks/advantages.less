@@ -27,13 +27,12 @@
 .advantages__item--health {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    left: -75px;
+    width: 60px;
+    height: 60px;
     top: 20px;
     position: absolute;
   }
@@ -42,13 +41,12 @@
 .advantages__item--cook {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    left: -75px;
+    width: 60px;
+    height: 60px;
     top: 20px;
     position: absolute;
   }
@@ -57,13 +55,12 @@
 .advantages__item--meal {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    left: -75px;
+    width: 60px;
+    height: 60px;
     top: 20px;
     position: absolute;
   }
@@ -72,61 +69,76 @@
 .advantages__item--clock {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    left: -75px;
+    width: 60px;
+    height: 60px;
     top: 20px;
     position: absolute;
   }
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    padding: 0;
+  }
+
+  .advantages__title {
+    margin-bottom: 143px;
+  }
+
   .advantages__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .advantages__item {
-    width: 300px;
-    height: 228px;
+    width: 50%;
+    height: 63px;
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 137px;
 
     &::before {
       width: 80px;
       height: 80px;
-      left: -80px;
+      left: 0;
+      top: -100px;
     }
   }
 
   .advantages__item--health {
-    &::after {
-      top: 27px;
-      left: -63px;
+    &::before {
+      top: -85px;
     }
   }
 
   .advantages__item--cook {
-    &::after {
-      top: 27px;
-      left: -63px;
+    &::before {
+      top: -85px;
     }
   }
 
   .advantages__item--meal {
-    &::after {
-      top: 27px;
-      left: -63px;
+    &::before {
+      top: -85px;
     }
   }
 
   .advantages__item--clock {
+    &::before {
+      top: -85px;
+    }
+
     &::after {
-      top: 27px;
-      left: -63px;
+      position: absolute;
+      content: "4";
+      font-size: 281px;
+      color: #f2f2f2;
     }
   }
 }
