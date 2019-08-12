@@ -1,17 +1,17 @@
 .categories {
   text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .categories__item {
   background-color: #f2f2f2;
   margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 20px;
 }
 
 .categories__item-title {
-  padding-left: 90px;
+  padding-left: 80px;
 }
 
 .categories__item--description {
@@ -36,7 +36,7 @@
     content: "";
     left: 30px;
     top: 22px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     width: 35px;
     height: 49px;
@@ -60,7 +60,7 @@
 
   &::after {
     content: "";
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     left: 13px;
     top: 35px;
@@ -76,6 +76,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .categories {
+    padding: 0;
+  }
+
   .categories__item {
     padding-left: 55px;
     padding-bottom: 62px;
@@ -143,12 +147,10 @@
     .categories {
       display: flex;
       flex-direction: row;
-      padding-left: 110px;
-      padding-right: 110px;
     }
 
     .categories__item {
-      min-width: 500px;
+      min-width: 495px;
     }
 
     .categories__item-title {
@@ -184,6 +186,8 @@
     }
 
     .categories__item--weight-gain {
+      margin-left: 80px;
+
       &::before {
         content: "";
         width: 100px;
