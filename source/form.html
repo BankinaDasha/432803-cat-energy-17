@@ -12,93 +12,76 @@
     <header class="page-header">
 
         <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg"  width="191px" height="39px" alt="лого cat enegy">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="203px" height="60px">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174px" height="59px">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="лого cat enegy">
+            </picture>
         </a>
         <nav class="main-nav main-nav--open main-nav--close">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <button class="main-nav__toggle" type="button"></button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="main-nav__item title-nav">
-                        <a href="index.html">Главная</a>
+                        <a class="main-nav__item-link" href="index.html">Главная</a>
                     </li>
                     <li class="main-nav__item title-nav">
-                        <a href="catalog.html">Каталог продукции</a>
+                        <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
                     </li>
                     <li class="main-nav__item title-nav">
-                        <a class="main-nav__item-link--active" href="form.html">Подбор программы</a>
+                        <a class="main-nav__item-link main-nav__item-link--active" href="form.html">Подбор программы</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="wrap">
+    <main class="wrap-form">
         <section class="form-page">
             <h1 class="form-page__title title-section">Подбор программы</h1>
             <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-            <form action="#" name="user-form">
-                <dl>
-                    <dt>
-                            <label for="user-name">Имя*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-name" name="user-name" value="" />
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
-                            <label for="user-weight">Вес (кг):*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-weight" name="user-weight" value="" />
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
-                            <label for="user-age">Возраст(лет):*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-age" name="user-age" value="" />
-                    </dd>
-                </dl>
-                <input type="radio" id="losing-weight">
+            <form class="user-form" action="#" name="user-form">
+
+                <label for="user-name">Имя*</label>
+                <input class="user-form__input" type="text" id="user-name" name="user-name" value="" />
+                <label for="user-weight">Вес (кг):*</label>
+
+                <input class="user-form__input" type="text" id="user-weight" name="user-weight" value="" />
+
+                <label for="user-age">Возраст(лет):*</label>
+
+                <input class="user-form__input" type="text" id="user-age" name="user-age" value="" />
+
+                <input class="user-form__radio" type="radio" id="losing-weight">
                 <label for="losing-weight">Похудение</label>
                 <input type="radio" id="add-mass">
                 <label for="add-mass">Набор массы</label>
                 <input type="radio" id="advice">
                 <label for="advice">Нужен совет</label>
-                <p>Контактые данные(владельца кота)</P>
-                <dl>
-                    <dt>
-                            <label for="user-email">E-mail:*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-email" name="user-email" value="" />
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
-                            <label for="user-tel">Телефон:*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-tel" name="user-tel" value="" />
-                    </dd>
-                </dl>
+                <p>Контактые данные(владельца кота)</p>
+
+                <label for="user-email">E-mail:*</label>
+
+                <input class="user-form__input" type="text" id="user-email" name="user-email" value="" />
+
+                <label for="user-tel">Телефон:*</label>
+
+                <input class="user-form__input" type="text" id="user-tel" name="user-tel" value="" />
+
                 <p>Комментарий</p>
                 <textarea name="расскажите обо всех повадках кота" cols="40" rows="3"></textarea>
                 <p>Дополнительно</p>
-                <input type="radio" id="sugar-no">
+                <input type="checkbox" id="sugar-no">
                 <label for="sugar-no">Сахарозаменитель</label>
-                <input type="radio" id="water">
+                <input type="checkbox" id="water">
                 <label for="water">Питьевая вода</label>
-                <input type="radio" id="milk">
+                <input type="checkbox" id="milk">
                 <label for="milk">Молоко</label>
-                <input type="radio" id="vitamin">
+                <input type="checkbox" id="vitamin">
                 <label for="vitamin">Витамины</label>
-                <input type="submit" value="Отправить заявку">
+                <a class="btn" href="#" >Отправить заявку</a>
                 <p>* - Обязательные поля</p>
             </form>
         </section>
-    </main>
     </main>
 
     <footer class="page-footer">

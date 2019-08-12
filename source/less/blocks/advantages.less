@@ -12,15 +12,6 @@
   padding-bottom: 15px;
   margin-bottom: 32px;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: @btn-color;
-    left: -80px;
-  }
 }
 
 
@@ -31,10 +22,13 @@
     content: "";
     background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 60px;
     height: 60px;
-    top: 20px;
+    top: 0;
     position: absolute;
+    background-color: @btn-color;
+    left: -80px;
   }
 }
 
@@ -45,10 +39,13 @@
     content: "";
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 60px;
     height: 60px;
-    top: 20px;
+    top: 0;
     position: absolute;
+    background-color: @btn-color;
+    left: -80px;
   }
 }
 
@@ -59,10 +56,13 @@
     content: "";
     background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 60px;
     height: 60px;
-    top: 20px;
+    top: 0;
     position: absolute;
+    background-color: @btn-color;
+    left: -80px;
   }
 }
 
@@ -73,10 +73,13 @@
     content: "";
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
+    background-position: center;
     width: 60px;
     height: 60px;
-    top: 20px;
+    top: 0;
     position: absolute;
+    background-color: @btn-color;
+    left: -80px;
   }
 }
 
@@ -102,36 +105,41 @@
     position: relative;
     padding-top: 37px;
     padding-bottom: 137px;
-
-    &::before {
-      width: 80px;
-      height: 80px;
-      left: 0;
-      top: -100px;
-    }
   }
 
   .advantages__item--health {
     &::before {
       top: -85px;
+      width: 80px;
+      height: 80px;
+      left: 0;
     }
   }
 
   .advantages__item--cook {
     &::before {
       top: -85px;
+      width: 80px;
+      height: 80px;
+      left: 0;
     }
   }
 
   .advantages__item--meal {
     &::before {
       top: -85px;
+      width: 80px;
+      height: 80px;
+      left: 0;
     }
   }
 
   .advantages__item--clock {
     &::before {
       top: -85px;
+      width: 80px;
+      height: 80px;
+      left: 0;
     }
 
     &::after {
@@ -139,6 +147,12 @@
       content: "4";
       font-size: 281px;
       color: #f2f2f2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .advantages__item {
+      width: 25%;
     }
   }
 }
