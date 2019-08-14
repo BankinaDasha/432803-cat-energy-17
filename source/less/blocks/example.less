@@ -2,4 +2,84 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f2f2f2;
+  padding-bottom: 30px;
+}
+
+.example__title {
+  margin-top: 25px;
+}
+
+.example__price {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.example__advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+
+.example__img {
+  margin-top: 22px;
+  margin-left: -20px;
+}
+
+.example__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__advantages--text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  text-transform: none;
+  margin-bottom: -5px;
+  margin-top: -5px;
+}
+
+.example__slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 26px;
+}
+
+.example__slide--button {
+  background-color: transparent;
+  border: none;
+}
+
+.example__slide--button-before {
+  padding-right: 20px;
+}
+
+.example__slide--button-arter {
+  padding-left: 20px;
+}
+
+
+.example__slide--toggle {
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    display: block;
+    background-color: @btn-color;
+  }
 }
