@@ -4,86 +4,47 @@
 
 .advantages__list {
   list-style-type: none;
-  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
 }
 
 .advantages__title {
   margin-top: -25px;
 }
 
+
 .advantages__item {
-  padding-top: 15px;
   padding-bottom: 0;
   margin-bottom: 17px;
-  position: relative;
-}
-
-
-.advantages__item--health {
-  position: relative;
+  align-items: center;
+  display: flex;
 
   &::before {
     content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: @btn-color;
+    flex: 0 0 60px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--health::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    position: absolute;
-    background-color: @btn-color;
-    left: -80px;
   }
-}
 
-.advantages__item--cook {
-  position: relative;
-
-  &::before {
-    content: "";
+  &--cook::before {
     background-image: url("../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    position: absolute;
-    background-color: @btn-color;
-    left: -80px;
   }
-}
 
-.advantages__item--meal {
-  position: relative;
-
-  &::before {
-    content: "";
+  &--meal::before {
     background-image: url("../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    position: absolute;
-    background-color: @btn-color;
-    left: -80px;
   }
-}
 
-.advantages__item--clock {
-  position: relative;
-
-  &::before {
-    content: "";
+  &--clock::before {
     background-image: url("../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    position: absolute;
-    background-color: @btn-color;
-    left: -80px;
   }
 }
 
@@ -93,8 +54,10 @@
   }
 
   .advantages__title {
-    margin-bottom: 125px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 60px;
+    margin-top: 0;
   }
 
   .advantages__list {
@@ -102,62 +65,70 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    counter-reset: advantages-list;
+    margin: 0;
   }
 
   .advantages__item {
-    width: 50%;
-    height: 63px;
     position: relative;
-    padding-top: 37px;
-    padding-bottom: 137px;
-  }
+    flex: 1 0 40%;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 60px;
+    padding-bottom: 118px;
+    display: block;
 
-  .advantages__item--health {
-    &::before {
-      top: -85px;
-      width: 80px;
-      height: 80px;
-      left: 0;
+    &:nth-child(2n+1) {
+      margin-right: 60px;
     }
-  }
 
-  .advantages__item--cook {
     &::before {
-      top: -85px;
       width: 80px;
       height: 80px;
-      left: 0;
-    }
-  }
-
-  .advantages__item--meal {
-    &::before {
-      top: -85px;
-      width: 80px;
-      height: 80px;
-      left: 0;
-    }
-  }
-
-  .advantages__item--clock {
-    &::before {
-      top: -85px;
-      width: 80px;
-      height: 80px;
-      left: 0;
+      flex: 0 0 80px;
+      display: block;
+      margin-bottom: 30px;
     }
 
     &::after {
+      content: counter(advantages-list);
       position: absolute;
-      content: "4";
+      font-family: "Oswald", sans-serif;
       font-size: 281px;
+      line-height: 1;
       color: #f2f2f2;
+      counter-increment: advantages-list;
+      top: -40px;
+      width: 140px;
+      text-align: center;
+      right: 75px;
+      z-index: -1;
     }
   }
 
   @media (min-width: @desktop-width) {
     .advantages__item {
       width: 25%;
+      flex: 1 0 20%;
+      padding-top: 30px;
+
+      &:nth-child(2n+1) {
+        margin-right: 0;
+      }
+    }
+
+    .advantages__title {
+      margin: 0;
+      padding-top: 60px;
+    }
+
+    .advantages__item::after {
+      right: 40px;
+      top: -10px;
+    }
+
+    .advantages__list {
+      padding-top: 27px;
     }
   }
 }
