@@ -10,11 +10,16 @@
 
 <body>
     <header class="page-header">
-
-        <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg"  width="191px" height="39px" alt="лого cat enegy">
-        </a>
-        <nav class="main-nav">
+        <div class="page-header__wrap wrap">
+            <a class="page-header__logo" href="index.html">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="203px" height="60px">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174px" height="59px">
+                    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191px" height="39px" alt="лого cat enegy">
+                </picture>
+            </a>
+            <button class="main-nav__toggle" type="button"></button>
+            <nav class="main-nav">
                 <button class="main-nav__toggle" type="button"></button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
@@ -22,7 +27,7 @@
                             <a class="main-nav__item-link" href="index.html">Главная</a>
                         </li>
                         <li class="main-nav__item title-nav">
-                            <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
+                            <a class="main-nav__item-link " href="catalog.html">Каталог продукции</a>
                         </li>
                         <li class="main-nav__item title-nav">
                             <a class="main-nav__item-link main-nav__item-link--active" href="form.html">Подбор программы</a>
@@ -30,77 +35,78 @@
                     </ul>
                 </div>
             </nav>
+        </div>
     </header>
     <main>
         <section class="form-page">
-            <h1 class="form-page__title title-section">Подбор программы</h1>
-            <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-            <form action="#" name="user-form">
-                <dl>
-                    <dt>
-                            <label for="user-name">Имя*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-name" name="user-name" value="" />
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
+            <div class="wrap">
+                <h1 class="form-page__title title-section">Подбор программы</h1>
+                <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+                <form class="user-form" action="#" name="user-form">
+                    <div class="user-form__container">
+                        <dl class="user-form__part">
+                            <label for="user-name">Имя:*</label>
+                            <input class="user-form__imput" type="text" id="user-name" name="user-name" value="" />
+                        </dl>
+                        <dl class="user-form__part">
                             <label for="user-weight">Вес (кг):*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-weight" name="user-weight" value="" />
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
+                            <input class="user-form__imput" type="text" id="user-weight" name="user-weight" value="" />
+                        </dl>
+                        <dl class="user-form__part">
                             <label for="user-age">Возраст(лет):*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-age" name="user-age" value="" />
-                    </dd>
-                </dl>
-                <input type="radio" id="losing-weight">
-                <label for="losing-weight">Похудение</label>
-                <input type="radio" id="add-mass">
-                <label for="add-mass">Набор массы</label>
-                <input type="radio" id="advice">
-                <label for="advice">Нужен совет</label>
-                <p>Контактые данные(владельца кота)</P>
-                <dl>
-                    <dt>
+                            <input class="user-form__imput" type="text" id="user-age" name="user-age" value="" />
+                        </dl>
+                    </div>
+                    <div class="user-form__container">
+                        <input class="visually-hidden" type="radio" id="losing-weight">
+                        <label class="user-form__label" for="losing-weight">Похудение</label>
+                        <input class="visually-hidden" type="radio" id="add-mass">
+                        <label class="user-form__label" for="add-mass">Набор массы</label>
+                        <input class="visually-hidden" type="radio" id="advice">
+                        <label class="user-form__label" for="advice">Нужен совет</label>
+                    </div>
+                    <div class="user-form__container">
+                        <p class="user-form__title">Контактые данные (владельца кота)</P>
+                        <dl class="user-form__part">
                             <label for="user-email">E-mail:*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-email" name="user-email" value="" />
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>
+                            <input class="user-form__imput" type="text" id="user-email" name="user-email" value="" />
+                        </dl>
+                        <dl class="user-form__part">
                             <label for="user-tel">Телефон:*</label>
-                          </dt>
-                    <dd>
-                        <input type="text" id="user-tel" name="user-tel" value="" />
-                    </dd>
-                </dl>
-                <p>Комментарий</p>
-                <textarea name="расскажите обо всех повадках кота" cols="40" rows="3"></textarea>
-                <p>Дополнительно</p>
-                <input type="radio" id="sugar-no">
-                <label for="sugar-no">Сахарозаменитель</label>
-                <input type="radio" id="water">
-                <label for="water">Питьевая вода</label>
-                <input type="radio" id="milk">
-                <label for="milk">Молоко</label>
-                <input type="radio" id="vitamin">
-                <label for="vitamin">Витамины</label>
-                <input type="submit" value="Отправить заявку">
-                <p>* - Обязательные поля</p>
-            </form>
+                            <input class="user-form__imput" type="text" id="user-tel" name="user-tel" value="" />
+                        </dl>
+                    </div>
+                    <p class="user-form__title">Комментарий</p>
+                    <textarea class="user-form__imput" name="расскажите обо всех повадках кота" cols="40" rows="3"></textarea>
+
+                    <p class="user-form__title">Дополнительно</p>
+                    <div class="user-form__container user-form__container--more"></div>
+                    <input class="visually-hidden" type="radio" id="sugar-no">
+                    <label class="user-form__label user-form__label-more" for="sugar-no">Сахарозаменитель</label>
+                    <input class="visually-hidden" type="radio" id="water">
+                    <label class="user-form__label user-form__label-more" for="water">Питьевая вода</label>
+                    <input class="visually-hidden" type="radio" id="milk">
+                    <label class="user-form__label user-form__label-more" for="milk">Молоко</label>
+                    <input class="visually-hidden" type="radio" id="vitamin">
+                    <label class="user-form__label user-form__label-more" for="vitamin">Витамины</label>
+                    <a href="#" class="btn user-form__btn"> Отправить заявку </a>
+                    <p class="user-form__text">* — Обязательные поля</p>
+                    <div>
+                </form>
+                </div>
         </section>
     </main>
-    </main>
 
+    <div class="map">
+        <div class="wrap">
+            <div class="map__container">
+                <p class="map__title title-content">Приглашаем к сотрудничеству дилеров!</p>
+                <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.320858716130438!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1564391328703!5m2!1sru!2sru" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </main>
     <footer class="page-footer">
         <a class="page-footer__logo" href="#">
             <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="лого catenegy">
@@ -126,5 +132,4 @@
         </div>
     </footer>
 </body>
-
 </html>
