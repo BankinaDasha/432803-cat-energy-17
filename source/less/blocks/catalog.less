@@ -1,17 +1,20 @@
 .catalog {
   list-style-type: none;
-  padding: 1px;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog__title {
-  text-align: center;
-  margin-top: 19px;
-  margin-right: 22px;
+  margin: 0;
+  padding: 18px 0 30px;
+  border-bottom: solid 1px #ededed;
+  border-top: solid 1px #ededed;
 }
 
 .catalog-wrap {
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 28px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,7 +27,7 @@
 
   .catalog__title {
     text-align: left;
-    padding-bottom: 15px;
     font-size: 60px;
+    border: none;
   }
 }
