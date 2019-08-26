@@ -24,7 +24,7 @@
 }
 
 .other-product__wrap {
-  padding-top: 12px;
+  padding: 12px 20px 0;
 }
 
 .other-product__item {
@@ -55,17 +55,26 @@
 
 @media (min-width: @tablet-width) {
   .other-product__list {
+    border: solid 1px #cdcdcd;
+  }
+
+  .other-product__wrap {
+    padding: 0;
+  }
+
+  .other-product__item {
     padding-left: 38px;
     padding-right: 38px;
+  }
+
+  .other-product__title {
+    font-size: 36px;
+    line-height: 1;
+    border: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .other-product__title {
-    font-size: 36px;
-    line-height: 1;
-  }
-
   .other-product__wrap {
     display: flex;
     align-items: center;
