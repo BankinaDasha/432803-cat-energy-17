@@ -106,8 +106,10 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 30px;
+    border-top: solid 1px #cdcdcd;
+    margin-top: -38px;
+    background-color: #ffffff;
   }
 
   .example__title {
@@ -117,7 +119,7 @@
 
   .example__text {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 25px;
     margin: 0;
     padding-top: 48px;
   }
@@ -152,5 +154,32 @@
       left: 25%;
       transform: translate(50%, -50%);
     }
+  }
+
+  .example-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__advantages {
+    font-size: 30px;
+  }
+
+  .example__advantages-text {
+    font-size: 14px;
+    background-color: #ffffff;
+  }
+
+  .example__price {
+    font-size: 20px;
+    width: 30%;
+    line-height: 30px;
+    text-align: right;
+    margin: 0;
+  }
+
+  .example__container {
+    width: 50%;
+    margin: 0;
   }
 }

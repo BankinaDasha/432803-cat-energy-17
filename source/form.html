@@ -39,51 +39,58 @@
     </header>
     <main>
         <div class="form-page">
-            <div class="wrap wrap-catalog">
+            <div class="wrap">
                 <h1 class="form-page__title title-section">Подбор программы</h1>
                 <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            </div>
                 <form class="user-form" action="#" name="user-form">
-                    <div class="user-form__container-form-main">
-
                         <div class="user-form__container">
+                            <div class="wrap">
                             <dl class="user-form__part">
                                 <label for="user-name">Имя:*</label>
-                                <input class="user-form__imput" type="text" id="user-name" name="user-name" value="" />
+                                <input class="user-form__input" placeholder="Барсик" type="text" id="user-name" name="user-name" value="" />
                             </dl>
                             <dl class="user-form__part">
                                 <label for="user-weight">Вес (кг):*</label>
-                                <input class="user-form__imput" type="text" id="user-weight" name="user-weight" value="" />
+                                <input class="user-form__input" placeholder="7" type="text" id="user-weight" name="user-weight" value="" />
                             </dl>
                             <dl class="user-form__part">
                                 <label for="user-age">Возраст(лет):*</label>
-                                <input class="user-form__imput" type="text" id="user-age" name="user-age" value="" />
+                                <input class="user-form__input" placeholder="7" type="text" id="user-age" name="user-age" value="" />
                             </dl>
                         </div>
-                        <div class="user-form__container user-form__input">
+                        </div>
+                        <div class="user-form__container user-form__input-btn">
+                            <div class="wrap">
                             <input class="visually-hidden" type="radio" id="losing-weight">
                             <label class="user-form__label" for="losing-weight">Похудение</label>
                             <input class="visually-hidden" type="radio" id="add-mass">
                             <label class="user-form__label" for="add-mass">Набор массы</label>
                             <input class="visually-hidden" type="radio" id="advice">
-                            <label class="user-form__label" for="advice">Нужен совет</label>
+                            <label class="user-form__label" for="advice">Не знаю (Нужен ваш совет)</label>
                         </div>
-                    </div>
-                    <p class="user-form__title">Контактые данные (владельца кота)</p>
+                        </div>
+                    <p class="user-form__title">Контактные данные (владельца кота)</p>
+
                     <div class="user-form__container-contact">
+                        <div class="wrap">
                         <dl class="user-form__contact-part">
-                            <label for="user-email">E-mail:*</label>
-                            <input class="user-form__imput" type="text" id="user-email" name="user-email" value="" />
+                            <label for="user-email" >E-mail:*</label>
+                            <input class="user-form__input"  placeholder="kuklachev@gmail.com" type="text" id="user-email" name="user-email" value="" />
                         </dl>
                         <dl class="user-form__contact-part">
                             <label for="user-tel">Телефон:*</label>
-                            <input class="user-form__imput" type="text" id="user-tel" name="user-tel" value="" />
+                            <input class="user-form__input" placeholder="8 (960) 900-60-90" type="text" id="user-tel" name="user-tel" value="" />
                         </dl>
                     </div>
-                    <p class="user-form__title">Комментарий</p>
-                    <textarea class="user-form__imput" name="расскажите обо всех повадках кота" cols="40" rows="3"></textarea>
-
+                    </div>
+                    <p class="user-form__title user-form__title-comment">Комментарий</p>
+                    <div class="wrap user-form__comment">
+                    <textarea class="user-form__input user-form__input-comment" name="расскажите обо всех повадках кота" placeholder="Расскажите обо всех повадках кота"></textarea>
+                    </div>
                     <p class="user-form__title">Дополнительно</p>
                     <div class="user-form__container--more">
+                        <div class="wrap">
                         <input class="visually-hidden" type="radio" id="sugar-no">
                         <label class="user-form__label user-form__label-more" for="sugar-no">Сахарозаменитель</label>
                         <input class="visually-hidden" type="radio" id="water">
@@ -94,6 +101,7 @@
                         <label class="user-form__label user-form__label-more" for="vitamin">Витамины</label>
                         <a href="#" class="btn user-form__btn"> Отправить заявку </a>
                         <p class="user-form__text">* — Обязательные поля</p>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -118,10 +126,10 @@
                     <a class="social__link social__link--vkontakte social__link--active" href="#"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook social__link--active" href="#"></a>
+                    <a class="social__link social__link--instagram social__link--active" href="#"></a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--instagram social__link--active" href="#"></a>
+                    <a class="social__link social__link--facebook social__link--active" href="#"></a>
                 </li>
             </ul>
         </div>

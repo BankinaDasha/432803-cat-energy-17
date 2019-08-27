@@ -7,14 +7,16 @@
 .user-form__part {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 0;
+  padding-bottom: 14px;
 }
 
 .user-form__label {
   position: relative;
-  padding-left: 42px;
-  padding-top: 13px;
+  padding-left: 45px;
   display: flex;
+  line-height: 24px;
+  padding-bottom: 18px;
 
   &::before {
     content: "";
@@ -33,7 +35,7 @@
     height: 12px;
     background-color: @btn-color;
     border-radius: 100%;
-    top: 22px;
+    top: 8px;
     left: 9px;
   }
 }
@@ -48,12 +50,27 @@
   }
 }
 
-.user-form__imput {
+.user-form__input {
   border: solid 1px #cdcdcd;
   opacity: 0.5;
   height: 45px;
   flex-grow: 1;
-  margin-left: 15px;
+  margin-left: 16px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.user-form__contact-part {
+  display: flex;
+  align-items: center;
+}
+
+.user-form__input-btn {
+  padding-top: 21px;
 }
 
 .user-form__btn {
@@ -71,26 +88,43 @@
 
 .user-form__title {
   font-size: 24px;
-  line-height: 1;
+  line-height: 22px;
   text-transform: none;
-  margin-right: 5px;
-
-  &::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    height: 3px;
-    background: @btn-color;
-    border-width: 0 10px;
-    margin-right: -100%;
-    margin-left: 25px;
-  }
+  margin: 0;
+  padding: 29px 20px;
+  background-color: #ffffff;
+  z-index: 1;
+  margin-right: 99px;
 }
 
 .user-form__container {
   display: flex;
   flex-direction: column;
+  border-bottom: solid 1px #ededed;
+  padding-bottom: 10px;
+}
+
+.user-form__input-comment {
+  height: 150px;
+  width: 280px;
+  margin: 0;
+}
+
+.user-form__comment {
+  border-top: 3px solid @btn-color;
+  margin-top: -20px;
+  padding-top: 40px;
+}
+
+.user-form__title-comment {
+  padding: 10px 20px;
+  margin-right: 159px;
+}
+
+.user-form__container-contact {
+  margin-top: -60px;
+  padding-top: 50px;
+  border-top: 3px solid @btn-color;
 }
 
 @media (min-width: @tablet-width) {
