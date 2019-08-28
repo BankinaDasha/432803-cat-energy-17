@@ -55,64 +55,113 @@
 @media (min-width: @tablet-width) {
   .other-product {
     border-top: 2px solid @btn-color;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 
   .other-product__list {
     border: solid 1px #cdcdcd;
+    margin-bottom: 68px;
   }
 
   .other-product__wrap {
-    padding: 0;
+    padding: 77px 30px 0;
   }
 
   .other-product__item {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 25px 38px 29px;
   }
 
   .other-product__title {
     font-size: 36px;
     line-height: 1;
     border: none;
-    margin-left: 20px;
-    margin-top: -50px;
-    padding: 27px 10px 13px;
+    margin-left: 27px;
+    margin-top: -24px;
+    padding: 0 38px;
     display: inline-block;
     background-color: white;
+  }
+
+  .other-product__button {
+    margin: 0;
+  }
+
+  .other-product__table {
+    width: 50%;
+    padding: 0;
+  }
+
+  .other-product__name {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .other-product__des {
+    font-size: 16px;
+    color: #444444;
+  }
+
+  .other-product__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .other-product {
+    margin-left: -110px;
+    margin-right: -110px;
+  }
+
+  .other-product__title {
+    margin-left: 70px;
+    padding: 0 38px;
+  }
+
   .other-product__wrap {
     display: flex;
     align-items: center;
-    padding-bottom: 86px;
-    padding-top: 75px;
+    padding: 75px 110px 86px;
     width: 100%;
   }
 
-  .other-product__list {
+  .other-product__item-wrap {
     width: 70%;
+    margin-bottom: 0;
+  }
+
+  .other-product__list {
+    width: 80%;
+    border: none;
+    margin-bottom: 0;
   }
 
   .other-product__item {
     display: flex;
     justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: solid 1px #cdcdcd;
+    border-top: solid 1px #cdcdcd;
   }
 
   .other-product__name {
     font-size: 20px;
-    line-height: 1;
-    width: 30%;
+    line-height: 29px;
+    width: 50%;
+  }
+
+  .other-product__des {
+    line-height: 30px;
   }
 
   .other-product__table {
     font-size: 16px;
-    line-height: 1.25;
-    width: 30%;
+    width: 50%;
   }
 
   .other-product__button {
-    width: 30%;
+    width: 27%;
   }
 }

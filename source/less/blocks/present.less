@@ -1,38 +1,63 @@
 .present__text {
   position: absolute;
   color: #ffffff;
-  margin-top: -105px;
+  margin-top: 72px;
+  padding: 0 50px;
   line-height: 20px;
   font-size: 16px;
-  padding-left: 50px;
-  padding-right: 50px;
+  text-align: center;
 }
 
 .present {
+  display: flex;
+  align-items: center;
   position: relative;
-  margin-bottom: 35px;
-  margin-top: 39px;
-  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 30px;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    width: 56px;
+    height: 61px;
+    position: absolute;
+    left: 112px;
+    top: 102px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .present__text {
-    text-align: left;
-    margin-top: -130px;
-    padding-left: 422px;
+    margin: 0;
+    padding-left: 408px;
     padding-right: 124px;
+  }
+
+  .present {
+    &::before {
+      content: "";
+      left: 90px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .present {
-    width: 30%;
+    width: 20%;
     margin: 0;
+    margin-left: 84px;
+    padding: 0;
+
+    &::before {
+      content: "";
+      left: none;
+      top: 60px;
+    }
   }
 
   .present__text {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-top: 70px;
+    padding: 0 31px;
   }
 }

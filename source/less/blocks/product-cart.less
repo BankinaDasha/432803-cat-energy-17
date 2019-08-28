@@ -62,20 +62,20 @@
   text-align: right;
 }
 
-.product-cart__more--title {
+.product-cart__more-title {
   margin-top: 20px;
   margin-bottom: 0;
   text-align: center;
 }
 
-.product-cart__more--text {
+.product-cart__more-text {
   font-size: 12px;
   line-height: 1.33;
   margin-top: 6px;
   text-align: center;
 }
 
-.product-cart__more--see {
+.product-cart__more-button {
   background-color: #f2f2f2;
   color: #444444;
   margin-top: 10px;
@@ -85,8 +85,9 @@
   .product-cart {
     position: relative;
     border: none;
-    margin-bottom: 140px;
+    margin-bottom: 28px;
     width: 324px;
+    padding-top: 115px;
   }
 
   .product-cart__wrap {
@@ -94,7 +95,8 @@
     flex-direction: column;
     background-color: #f2f2f2;
     position: relative;
-    padding: 38px;
+    padding: 162px 38px 38px;
+    align-items: stretch;
   }
 
   .product-cart__row {
@@ -104,12 +106,16 @@
   .product-cart__photo {
     position: absolute;
     left: 0;
-    top: -37px;
+    top: 126px;
+    transform: translateY(-100%);
   }
 
   .product-cart__photo-more {
     width: 61px;
     height: 61px;
+    position: absolute;
+    top: 52px;
+    align-self: center;
   }
 
   .product-cart__item-name,
@@ -124,20 +130,18 @@
     line-height: 1;
     text-align: center;
     margin-left: 0;
-    left: 33px;
-    padding: 0 25px 14px;
-    top: 128px;
+    margin-right: 0;
+    padding: 0 55px;
+    margin-bottom: 21px;
   }
 
   .product-cart__list {
-    left: 0;
-    top: 135px;
     margin: 0;
     border-collapse: collapse;
   }
 
   .product-cart__button {
-    margin-top: 170px;
+    margin-top: 34px;
   }
 
   .product-cart__more {
@@ -145,15 +149,22 @@
     border: solid 1px #cdcdcd;
   }
 
-  .product-cart__more--title {
+  .product-cart__more-title {
     font-size: 20px;
     line-height: 21px;
-    margin: 0;
+    margin-bottom: 23px;
+    margin-top: 0;
+    padding: 0 40px;
   }
 
-  .product-cart__more--text {
+  .product-cart__more-text {
     font-size: 16px;
     margin: 0;
+    padding: 0 20px;
+  }
+
+  .product-cart__more-button {
+    margin-top: 83px;
   }
 }
 
@@ -163,15 +174,19 @@
     font-size: 20px;
     line-height: 1;
     padding: 0 5px 0;
-  }
-
-  .product-cart__more--see {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0;
+    margin-bottom: 20px;
   }
 
   .product-cart {
     width: 245px;
+    margin-bottom: 30px;
+  }
+
+  .product-cart__more-title {
+    padding: 0;
+  }
+
+  .product-cart__more-text {
+    padding: 0;
   }
 }
