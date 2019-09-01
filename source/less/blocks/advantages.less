@@ -7,8 +7,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin: 0;
-  padding-top: 28px;
+  margin-top: 28px;
 }
 
 .advantages__title {
@@ -63,9 +62,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 55px;
+    margin-top: 58px;
+    margin-bottom: 0;
     counter-reset: advantages-list;
-    margin: 0;
   }
 
   .advantages__item {
@@ -74,17 +73,22 @@
     font-size: 16px;
     line-height: 1.5;
     padding-right: 60px;
-    padding-bottom: 118px;
+    padding-bottom: 80px;
+    margin-bottom: 57px;
     display: block;
 
     &:nth-child(2n+1) {
       margin-right: 60px;
     }
 
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 24px;
+    }
+
     &::before {
       width: 80px;
       height: 80px;
-      flex: 0 0 80px;
       display: block;
       margin-bottom: 30px;
     }

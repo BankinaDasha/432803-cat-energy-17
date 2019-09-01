@@ -14,7 +14,7 @@
   line-height: 18px;
   margin: 0;
   border-bottom: solid 1px #d9d9d9;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 .categories__item-button {
@@ -91,7 +91,7 @@
 
   .categories__item {
     padding: 71px 54px 60px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .categories__item-title {
@@ -112,15 +112,12 @@
   .categories__item-description {
     border-bottom: none;
     font-size: 16px;
-    padding-bottom: 37px;
     line-height: 24px;
-    padding-right: 225px;
-    padding-top: 27px;
-    margin: 0;
-  }
+    margin: 27px 225px 37px 0;
 
-  .ategories__item-description--weight-gain {
-    padding-right: 256px;
+    .categories__item--weight-gain & {
+      margin-right: 260px;
+    }
   }
 
   .categories__item--slimming {
@@ -162,6 +159,8 @@
       left: 412px;
     }
   }
+
+
 
   @media (min-width: @desktop-width) {
     .categories {
