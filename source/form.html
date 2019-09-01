@@ -45,7 +45,7 @@
             </div>
                 <form class="user-form" action="#" name="user-form">
                         <div class="user-form__container">
-                            <div class="wrap">
+                            <div class="wrap-form">
                             <dl class="user-form__part">
                                 <label for="user-name">Имя:*</label>
                                 <input class="user-form__input" placeholder="Барсик" type="text" id="user-name" name="user-name" value="" />
@@ -61,7 +61,7 @@
                         </div>
                         </div>
                         <div class="user-form__container user-form__input-btn">
-                            <div class="wrap">
+                            <div class="wrap-form user-form__inner">
                             <input class="visually-hidden" type="radio" id="losing-weight">
                             <label class="user-form__label" for="losing-weight">Похудение</label>
                             <input class="visually-hidden" type="radio" id="add-mass">
@@ -73,7 +73,7 @@
                     <p class="user-form__title">Контактные данные (владельца кота)</p>
 
                     <div class="user-form__container-contact">
-                        <div class="wrap">
+                        <div class="wrap-form">
                         <dl class="user-form__contact-part">
                             <label for="user-email" >E-mail:*</label>
                             <input class="user-form__input"  placeholder="kuklachev@gmail.com" type="text" id="user-email" name="user-email" value="" />
@@ -85,12 +85,14 @@
                     </div>
                     </div>
                     <p class="user-form__title user-form__title-comment">Комментарий</p>
-                    <div class="wrap user-form__comment">
+                    <div class="user-form__comment">
+                        <div class="wrap-form">
                     <textarea class="user-form__input user-form__input-comment" name="расскажите обо всех повадках кота" placeholder="Расскажите обо всех повадках кота"></textarea>
                     </div>
-                    <p class="user-form__title">Дополнительно</p>
-                    <div class="user-form__container--more">
-                        <div class="wrap">
+                  </div>
+                    <p class="user-form__title user-form__title-more">Дополнительно</p>
+                    <div class="user-form__container-more">
+                        <div class="wrap-form">
                         <input class="visually-hidden" type="radio" id="sugar-no">
                         <label class="user-form__label user-form__label-more" for="sugar-no">Сахарозаменитель</label>
                         <input class="visually-hidden" type="radio" id="water">
@@ -107,7 +109,7 @@
             </div>
         </div>
         <div class="map">
-            <div class="wrap wrap-catalog">
+            <div class="wrap wrap-catalog map__container-form">
                 <div class="map__container">
                     <p class="map__title title-content">Приглашаем к сотрудничеству дилеров!</p>
                     <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
