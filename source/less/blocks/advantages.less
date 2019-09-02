@@ -111,12 +111,14 @@
 
   @media (min-width: @desktop-width) {
     .advantages__item {
-      width: 25%;
+
       flex: 1 0 20%;
-      padding-top: 30px;
+      padding-top: 0;
+      padding-right: 54px;
+      margin-right: 50px;
 
       &:nth-child(2n+1) {
-        margin-right: 0;
+        margin-right: 50px;
       }
     }
 
@@ -126,12 +128,12 @@
     }
 
     .advantages__item::after {
-      right: 40px;
-      top: -10px;
+      right: 10px;
     }
 
+
     .advantages__list {
-      padding-top: 27px;
+      margin-top: 53px;
     }
   }
 }

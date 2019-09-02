@@ -13,13 +13,13 @@
 .categories__item-description {
   line-height: 18px;
   margin: 0;
-  border-bottom: solid 1px #d9d9d9;
   margin-bottom: 21px;
 }
 
 .categories__item-button {
   display: block;
   padding-top: 15px;
+  border-top: solid 1px #d9d9d9;
 
   &::before {
     content: "";
@@ -27,8 +27,8 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     width: 25px;
     height: 12px;
-    left: 95px;
-    top: 23px;
+    left: 116px;
+    bottom: 22px;
   }
 }
 
@@ -102,15 +102,16 @@
 
   .categories__item-button {
     font-size: 20px;
+    border: none;
 
     &::before {
       content: "";
-      left: 126px;
+      left: 180px;
+      bottom: 70px;
     }
   }
 
   .categories__item-description {
-    border-bottom: none;
     font-size: 16px;
     line-height: 24px;
     margin: 27px 225px 37px 0;
@@ -160,8 +161,6 @@
     }
   }
 
-
-
   @media (min-width: @desktop-width) {
     .categories {
       display: flex;
@@ -189,9 +188,13 @@
       font-size: 16px;
       padding-bottom: 0;
       line-height: 1.5;
-      padding-top: 60px;
-      padding-right: 33px;
+      padding-right: 0;
       margin: 0;
+      margin-top: 77px;
+
+      .categories__item--weight-gain & {
+        margin-right: 0;
+      }
     }
 
     .categories__item--slimming {

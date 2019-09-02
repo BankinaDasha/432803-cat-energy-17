@@ -14,14 +14,17 @@
 .user-form__label {
   position: relative;
   padding-left: 45px;
-  display: flex;
+  display: block;
   line-height: 24px;
-  padding-bottom: 18px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-bottom: 11px;
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
+    top: 0;
     width: 30px;
     height: 30px;
     border: 1px solid #cdcdcd;
@@ -33,16 +36,26 @@
     position: absolute;
     width: 12px;
     height: 12px;
-    background-color: @btn-color;
+    background-color: transparent;
     border-radius: 100%;
-    top: 8px;
+    top: 9px;
     left: 9px;
   }
 }
 
+.user-form__imput-radio:checked + .user-form__label::after {
+  background-color: @btn-color;
+}
+
 .user-form__label-more {
   &::after {
+    background: url("../img/icon-tick.svg");
+    width: 22px;
+    height: 17px;
     display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
   }
 
   &::before {
@@ -50,12 +63,16 @@
   }
 }
 
+.user-form__imput-more:checked + .user-form__label::after {
+  display: block;
+}
+
 .user-form__input {
   border: solid 1px #cdcdcd;
   opacity: 0.5;
   height: 45px;
   flex-grow: 1;
-  margin-left: 16px;
+  margin-left: 14px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -74,9 +91,9 @@
 }
 
 .user-form__btn {
-  margin-top: 23px;
+  margin-top: 35px;
   padding: 10px 15px;
-  display: flex;
+  display: block;
 }
 
 .user-form__text {
@@ -93,7 +110,7 @@
   line-height: 22px;
   text-transform: none;
   margin: 0;
-  padding: 29px 20px;
+  padding: 32px 20px;
   background-color: #ffffff;
   z-index: 1;
   margin-right: 99px;
@@ -120,7 +137,7 @@
 
 .user-form__container-more {
   border-top: 3px solid @btn-color;
-  margin-top: -40px;
+  margin-top: -45px;
   padding-top: 42px;
   margin-bottom: 10px;
 }
@@ -135,7 +152,7 @@
 }
 
 .user-form__container-contact {
-  margin-top: -60px;
+  margin-top: -63px;
   padding-top: 50px;
   border-top: 3px solid @btn-color;
 }

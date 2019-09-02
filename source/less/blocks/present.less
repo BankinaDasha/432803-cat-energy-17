@@ -1,3 +1,28 @@
+.present {
+  padding-top: 36px;
+  padding-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    width: 56px;
+    height: 61px;
+    position: absolute;
+    left: 50%;
+    top: 102px;
+    transform: translate(-50%, 0);
+  }
+}
+
+.present__photo {
+  width: 100%;
+  height: 289px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
 .present__text {
   position: absolute;
   color: #ffffff;
@@ -6,38 +31,33 @@
   line-height: 20px;
   font-size: 16px;
   text-align: center;
-}
-
-.present {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding-top: 36px;
-  padding-bottom: 30px;
-
-  &::before {
-    content: "";
-    background-image: url("../img/icon-gift.svg");
-    width: 56px;
-    height: 61px;
-    position: absolute;
-    left: 112px;
-    top: 102px;
-  }
+  bottom: 54px;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .present__text {
-    margin: 0;
-    padding-left: 408px;
-    padding-right: 124px;
-  }
-
   .present {
+    padding-top: 0;
+    padding-bottom: 0;
+
     &::before {
       content: "";
-      left: 90px;
+      left: 17%;
+      top: 66px;
     }
+  }
+
+  .present__text {
+    padding-left: 423px;
+    padding-right: 124px;
+    text-align: left;
+    bottom: 68px;
+    margin: 0;
+  }
+
+  .present__photo {
+    height: 200px;
   }
 }
 
@@ -50,9 +70,13 @@
 
     &::before {
       content: "";
-      left: none;
       top: 60px;
+      left: 50%;
     }
+  }
+
+  .present__photo {
+    height: 289px;
   }
 
   .present__text {
