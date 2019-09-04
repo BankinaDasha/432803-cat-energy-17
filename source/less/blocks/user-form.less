@@ -79,6 +79,11 @@
   color: #444444;
   padding-left: 10px;
   font-size: 16px;
+
+  &::after {
+    content: "";
+    background: url("../img/icon-mail.svg") top 0 center / 18px 14px no-repeat #ffffff;
+  }
 }
 
 .user-form__contact-part {
@@ -159,7 +164,7 @@
 
 @media (min-width: @tablet-width) {
   .user-form {
-    margin: 70px 0;
+    margin: 69px 0;
     font-size: 20px;
     line-height: 1;
   }
@@ -170,17 +175,25 @@
 
   .user-form__inner {
     border: solid 1px #ededed;
+    padding: 28px 27px 5px;
+    margin-bottom: 41px;
   }
 
   .user-form__part {
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     padding: 0;
+  }
+
+  .user-form__container-contact {
+    margin-top: -45px;
   }
 
   .user-form__title {
     font-size: 36px;
     line-height: 1;
+    padding: 32px 43px;
+    margin-right: 144px;
 
     &::before {
       content: "";
@@ -195,21 +208,31 @@
     }
   }
 
+  .user-form__title-comment {
+    margin-right: 475px;
+  }
+
   .user-form__label {
-    padding-bottom: 30px;
-    padding-top: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-left: 60px;
   }
 
   .user-form__label::before {
     width: 40px;
     height: 40px;
+    top: -6px;
   }
 
   .user-form__label::after {
-    top: 11px;
+    top: 5px;
     left: 11px;
     width: 18px;
     height: 18px;
+  }
+
+  .user-form__comment {
+    margin-top: -47px;
   }
 
   .user-form__container--more {
@@ -223,6 +246,10 @@
 
   .user-form__label-more {
     width: 50%;
+  }
+
+  .user-form__title-more {
+    margin-right: 446px;
   }
 
   .user-form__btn {
@@ -245,19 +272,23 @@
     border: solid 1px rgba(205, 205, 205, 0.5);
     padding-bottom: 0;
     font-size: 20px;
+    margin-left: 18px;
   }
 
   .user-form__contact-part {
-    display: flex;
+    margin: 0;
+    margin-bottom: 27px;
   }
 
   .user-form__input-comment {
     width: 631px;
     height: 174px;
+    margin: 48px 0 30px;
   }
 
   .user-form__input-btn {
-    padding-top: 34px;
+    margin-top: 43px;
+    padding: 0;
   }
 }
 

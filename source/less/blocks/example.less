@@ -1,9 +1,10 @@
 .example {
   background-color: #f2f2f2;
-  padding: 18px 0 30px;
+  padding-bottom: 31px;
 }
 
 .example__title {
+  padding-top: 17px;
   margin: 0;
 }
 
@@ -16,8 +17,7 @@
 }
 
 .example__text {
-  padding-top: 30px;
-  margin: 0;
+  margin: 27px 0 25px;
   line-height: 18px;
 }
 
@@ -36,8 +36,12 @@
 }
 
 .example__img {
-  margin-top: 22px;
-  margin-left: -20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.example__cat-wrap {
+  margin: 35px -20px 0;
 }
 
 .example__container {
@@ -57,13 +61,48 @@
   padding: 0 10px 0;
   text-align: center;
   background-color: #f2f2f2;
+  min-height: 24px;
+}
+
+.example__advantages-number {
+  min-height: 24px;
 }
 
 .example__slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25px;
+  max-width: 450px;
+  padding: 0 64px;
+  margin: 28px  auto 0;
+}
+
+.example__slide-line {
+  display: flex;
+  flex: 1 0 84px;
+  align-items: center;
+  margin: 0 18px;
+  padding: 0 6px;
+  height: 14px;
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: #ffffff;
+
+  &::before {
+    content: " ";
+    flex: 0 0 50%;
+    height: 6px;
+    background-color: @btn-color;
+    border-radius: 3px;
+  }
+}
+
+.example__slide--toggle {
+  display: none;
+}
+
+.example__cat-img--after {
+  display: none;
 }
 
 .example__advantages-weight {
@@ -84,31 +123,12 @@
 }
 
 
-.example__slide--toggle {
-  position: relative;
-  width: 84px;
-  height: 14px;
-  border-radius: 6px;
-  border: solid 1px #cdcdcd;
-  background-color: #ffffff;
-  margin: 0 18px 0;
-}
-
-.example__slide--toggle-full {
-  position: absolute;
-  width: 35px;
-  height: 6px;
-  border-radius: 3px;
-  display: block;
-  background-color: @btn-color;
-  border: none;
-}
-
 @media (min-width: @tablet-width) {
   .example {
-    padding-top: 30px;
+    padding-top: 12px;
+    padding-bottom: 0;
     border-top: solid 1px #cdcdcd;
-    background: linear-gradient(to top, #f2f2f2 462px, #ffffff 50%);
+    background-color: #ffffff;
   }
 
   .example__title {
@@ -123,20 +143,87 @@
     padding-top: 48px;
   }
 
-  .example__slide--toggle {
+  .example__advantages-weight {
+    margin-right: 40px;
+  }
+
+  .example__cat-wrap {
+    margin: 0 -30px;
     position: relative;
-    width: 428px;
+    padding-bottom: 84px;
+  }
+
+  .exapmle__cat-pictures {
+    height: 517px;
+    margin-top: 70px;
+    box-sizing: content-box;
+  }
+
+  .example__img {
+    max-width: none;
+  }
+
+  .example__img--after {
+    display: block;
+  }
+
+  .example__cat-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+    &--before {
+      left: 0;
+      padding-left: 45px;
+      background: linear-gradient(to bottom, #ffffff 170px, #f2f2f2 170px);
+    }
+
+    &--after {
+      right: 0;
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      overflow: hidden;
+      padding-right: 33px;
+      background: linear-gradient(to bottom, #ffffff 170px, #eaeaea 170px);
+    }
+  }
+
+  .example__slide {
+    position: relative;
+    z-index: 10;
+    max-width: 700px;
+  }
+
+  .example__slide-line {
+    align-items: baseline;
     height: 6px;
     border-radius: 2.5px;
     background-color: #dcdcdc;
+    border: none;
   }
 
-  .example__slide--toggle-full {
+  .example__slide-line::before {
+    display: none;
+  }
+
+  .example__slide--button {
+    border-bottom: 1px dotted #bfbfbf;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .example__slide--toggle {
+    display: flex;
     position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    display: block;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     border: solid 1px #cdcdcd;
     background-color: #ffffff;
@@ -158,10 +245,12 @@
   .example-inner {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
 
   .example__advantages {
     font-size: 30px;
+    padding: 7px 15px 0;
   }
 
   .example__advantages-text {
@@ -171,14 +260,13 @@
 
   .example__price {
     font-size: 20px;
-    width: 30%;
+    max-width: 180px;
     line-height: 30px;
     text-align: right;
     margin: 0;
   }
 
   .example__container {
-    width: 50%;
     margin: 0;
   }
 }
