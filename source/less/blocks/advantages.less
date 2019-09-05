@@ -115,12 +115,23 @@
 
       flex: 1 0 20%;
       padding-top: 0;
-      padding-right: 54px;
-      margin-right: 50px;
+      margin-right: 0;
+      padding-right: 42px;
+      margin-bottom: 0;
 
       &:nth-child(2n+1) {
-        margin-right: 50px;
+        margin-right: 0;
+        margin-bottom: 0;
       }
+
+      &::before {
+        margin-bottom: 34px;
+      }
+    }
+
+    .advantages__item:nth-last-child(1),
+    .advantages__item:nth-last-child(2) {
+      margin-bottom: 0;
     }
 
     .advantages__title {
@@ -134,7 +145,8 @@
 
 
     .advantages__list {
-      margin-top: 53px;
+      margin-top: 55px;
+      margin-bottom: 0;
     }
   }
 }
