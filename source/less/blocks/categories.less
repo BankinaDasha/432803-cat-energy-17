@@ -126,18 +126,20 @@
       content: "";
       width: 200px;
       height: 200px;
-      top: 92px;
+      top: 85px;
       bottom: 80px;
-      left: 448px;
+      right: 60px;
+      left: auto;
     }
 
     &::after {
       content: "";
       width: 141px;
       height: 194px;
-      top: 80px;
+      top: 73px;
       bottom: 98px;
-      left: 477px;
+      left: auto;
+      right: 90px;
     }
   }
 
@@ -148,7 +150,8 @@
       height: 200px;
       top: 88px;
       bottom: 80px;
-      left: 449px;
+      left: auto;
+      right: 60px;
     }
 
     &::after {
@@ -157,86 +160,87 @@
       height: 113px;
       top: 132px;
       bottom: 124px;
-      left: 412px;
+      left: auto;
+      right: 28px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    display: flex;
+    flex-direction: row;
+    margin-top: 85px;
+  }
+
+  .categories__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+  }
+
+  .categories__item-title {
+    padding-left: 160px;
+  }
+
+  .categories__item-button {
+    padding-top: 25px;
+  }
+
+  .categories__item-description {
+    border-bottom: none;
+    font-size: 16px;
+    padding-bottom: 0;
+    line-height: 1.5;
+    padding-right: 0;
+    margin: 0;
+    margin-top: 77px;
+
+    .categories__item--weight-gain & {
+      margin-right: 0;
     }
   }
 
-  @media (min-width: @desktop-width) {
-    .categories {
-      display: flex;
-      flex-direction: row;
-      margin-top: 85px;
+  .categories__item--slimming {
+    &::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      bottom: 80px;
+      left: 52px;
     }
 
-    .categories__item {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      flex: 1 0;
+    &::after {
+      content: "";
+      width: 71px;
+      height: 97px;
+      top: 41px;
+      bottom: 98px;
+      left: 65px;
+    }
+  }
+
+  .categories__item--weight-gain {
+    margin-left: 80px;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      bottom: 80px;
+      left: 52px;
     }
 
-    .categories__item-title {
-      padding-left: 160px;
-    }
-
-    .categories__item-button {
-      padding-top: 25px;
-    }
-
-    .categories__item-description {
-      border-bottom: none;
-      font-size: 16px;
-      padding-bottom: 0;
-      line-height: 1.5;
-      padding-right: 0;
-      margin: 0;
-      margin-top: 77px;
-
-      .categories__item--weight-gain & {
-        margin-right: 0;
-      }
-    }
-
-    .categories__item--slimming {
-      &::before {
-        content: "";
-        width: 100px;
-        height: 100px;
-        top: 47px;
-        bottom: 80px;
-        left: 52px;
-      }
-
-      &::after {
-        content: "";
-        width: 71px;
-        height: 97px;
-        top: 41px;
-        bottom: 98px;
-        left: 65px;
-      }
-    }
-
-    .categories__item--weight-gain {
-      margin-left: 80px;
-
-      &::before {
-        content: "";
-        width: 100px;
-        height: 100px;
-        top: 47px;
-        bottom: 80px;
-        left: 52px;
-      }
-
-      &::after {
-        content: "";
-        width: 134px;
-        height: 53px;
-        top: 69px;
-        bottom: 124px;
-        left: 38px;
-      }
+    &::after {
+      content: "";
+      width: 134px;
+      height: 53px;
+      top: 69px;
+      bottom: 124px;
+      left: 38px;
     }
   }
 }
