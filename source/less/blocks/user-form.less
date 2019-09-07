@@ -130,11 +130,12 @@
   font-size: 24px;
   line-height: 22px;
   text-transform: none;
+  font-weight: 400;
   margin: 0;
-  padding: 32px 20px;
-  background-color: #ffffff;
-  z-index: 1;
-  margin-right: 99px;
+  display: inline-block;
+  background-color: white;
+  vertical-align: middle;
+  padding-left: 20px;
 }
 
 .user-form__container {
@@ -144,43 +145,57 @@
   padding-bottom: 10px;
 }
 
+.user-form__title-contact {
+  margin-right: 100px;
+  margin-top: -16px;
+  margin-bottom: 19px;
+}
+
 .user-form__input-comment {
   height: 150px;
   width: 280px;
   margin: 0;
+  margin-top: 18px;
 }
 
 .user-form__comment {
   border-top: 3px solid @btn-color;
-  margin-top: -20px;
-  padding-top: 40px;
+  margin-bottom: 97px;
 }
 
 .user-form__container-more {
   border-top: 3px solid @btn-color;
   margin-top: -45px;
-  padding-top: 42px;
   margin-bottom: 10px;
 }
 
+.user-form__part-more {
+  margin: 0;
+}
+
 .user-form__title-more {
-  margin-right: 135px;
+  margin-top: -38px;
+  padding: 10px 20px;
 }
 
 .user-form__title-comment {
   padding: 10px 20px;
-  margin-right: 159px;
+  margin-top: -40px;
 }
 
 .user-form__container-contact {
-  margin-top: -63px;
-  padding-top: 50px;
-  border-top: 3px solid @btn-color;
+  border-top: 3px solid #68b738;
+  margin-top: 57px;
+  margin-bottom: 25px;
+}
+
+.user-form__inner-more {
+  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .user-form {
-    margin: 69px 0 64px;
+    margin: 69px 0 68px;
     font-size: 20px;
     line-height: 1;
   }
@@ -189,7 +204,7 @@
     border: none;
   }
 
-  .user-form__inner {
+  .user-form__container-program {
     border: solid 1px #ededed;
     padding: 28px 27px 5px;
     margin-bottom: 41px;
@@ -199,10 +214,6 @@
     margin-top: 0;
     margin-bottom: 19px;
     padding: 0;
-  }
-
-  .user-form__container-contact {
-    margin-top: -45px;
   }
 
   .user-form__title {
@@ -224,8 +235,12 @@
     }
   }
 
+  .user-form__title-contact {
+    margin-top: -60px;
+  }
+
   .user-form__title-comment {
-    margin-right: 475px;
+    margin-top: -58px;
   }
 
   .user-form__label {
@@ -251,12 +266,11 @@
     margin-top: -47px;
   }
 
-  .user-form__container-more {
-
-    width: 100%;
-    padding-top: 75px;
+  .user-form__inner-more {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 11px;
   }
 
   .user-form__part-more {
@@ -270,7 +284,7 @@
   }
 
   .user-form__title-more {
-    margin-right: 446px;
+    margin-top: -55px;
   }
 
   .user-form__btn {
@@ -279,16 +293,16 @@
     width: 45%;
     font-size: 20px;
     line-height: 1;
-    margin-top: 15px;
+    margin-top: 0;
   }
 
   .user-form__text {
     display: inline-block;
-    width: 47%;
+    width: 45%;
     font-size: 16px;
     line-height: 1;
     text-align: center;
-    margin-top: 31px;
+    margin-top: 20px;
     margin-left: 5px;
   }
 
@@ -320,6 +334,34 @@
 }
 
 @media (min-width: @desktop-width) {
+  .user-form {
+    margin: 65px 0 68px;
+  }
+
+  .user-form__title {
+    padding: 0 50px 0 61px;
+  }
+
+  .user-form__container-contact {
+    margin-top: 65px;
+  }
+
+  .user-form__title-contact {
+    margin: -44px 21px 0;
+  }
+
+  .user-form__title-comment {
+    margin: -45px 21px 0;
+  }
+
+  .user-form__title-more {
+    margin: -47px 21px 0;
+  }
+
+  .user-form__fist-info {
+    display: flex;
+  }
+
   .user-form__container-form-main {
     display: flex;
     width: 100%;
@@ -328,18 +370,51 @@
 
   .user-form__container {
     width: 45%;
-  }
-
-  .user-form__container-contact {
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
   }
 
   .user-form__contact-part {
     width: 45%;
   }
 
-  .user-form__label-more {
-    width: 25%;
+  .user-form__input-comment {
+    width: 1220px;
+    margin: 64px 0 39px;
+  }
+
+  .user-form__inner-more {
+    flex-wrap: nowrap;
+    margin-top: 53px;
+    margin-bottom: 40px;
+  }
+
+  .user-form__part-more:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .user-form__part-more:nth-child(4n + 1) {
+    margin: 0;
+  }
+
+  .user-form__part-more {
+    margin: 0 0 0 80px;
+  }
+
+  .user-form__btn {
+    width: 47%;
+  }
+
+  .user-form__text {
+    text-align: left;
+    margin-top: 0;
+    margin-left: 72px;
+  }
+
+  .user-form__container-info {
+    margin: 0 0 0 110px;
+  }
+
+  .user-form__container-program {
+    margin: 0;
   }
 }
