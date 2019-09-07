@@ -107,7 +107,7 @@
   background: url("../img/icon-phone.svg") right 11px center / 21px 21px no-repeat #ffffff;
 }
 
-.user-form__input-btn {
+.user-form__container-program {
   padding-top: 21px;
 }
 
@@ -195,7 +195,6 @@
 
 @media (min-width: @tablet-width) {
   .user-form {
-    margin: 69px 0 68px;
     font-size: 20px;
     line-height: 1;
   }
@@ -208,6 +207,7 @@
     border: solid 1px #ededed;
     padding: 28px 27px 5px;
     margin-bottom: 41px;
+    margin-top: 43px;
   }
 
   .user-form__part {
@@ -219,20 +219,8 @@
   .user-form__title {
     font-size: 36px;
     line-height: 1;
-    padding: 32px 43px;
+    padding-left: 0;
     margin-right: 144px;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      width: 100%;
-      height: 3px;
-      background: @btn-color;
-      border-width: 0 10px;
-      margin-left: -100%;
-      margin-right: 25px;
-    }
   }
 
   .user-form__title-contact {
@@ -326,20 +314,11 @@
     margin: 48px 0 30px;
     padding: 9px 18px 10px;
   }
-
-  .user-form__input-btn {
-    margin-top: 43px;
-    padding: 0;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .user-form {
-    margin: 65px 0 68px;
-  }
-
   .user-form__title {
-    padding: 0 50px 0 61px;
+    padding: 0 40px 0 0;
   }
 
   .user-form__container-contact {
@@ -347,7 +326,7 @@
   }
 
   .user-form__title-contact {
-    margin: -44px 21px 0;
+    margin: -44px 0 0;
   }
 
   .user-form__title-comment {
@@ -369,12 +348,8 @@
   }
 
   .user-form__container {
-    width: 45%;
     margin: 0;
-  }
-
-  .user-form__contact-part {
-    width: 45%;
+    flex: 0 0 570px;
   }
 
   .user-form__input-comment {
@@ -410,11 +385,15 @@
     margin-left: 72px;
   }
 
-  .user-form__container-info {
-    margin: 0 0 0 110px;
+  .user-form__container-program {
+    margin-left: 80px;
   }
 
-  .user-form__container-program {
-    margin: 0;
+  .user-form__input-email {
+    width: 486px;
+  }
+
+  .user-form__input-phone {
+    width: 472px;
   }
 }
