@@ -11,6 +11,10 @@
   padding-bottom: 14px;
 }
 
+.user-form__fist-info {
+  margin-bottom: 41px;
+}
+
 .user-form__label {
   position: relative;
   padding-left: 45px;
@@ -60,6 +64,10 @@
 
   &::before {
     border-radius: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -142,9 +150,10 @@
   display: inline-block;
   background-color: white;
   vertical-align: middle;
-  max-width: 220px;
+  max-width: 225px;
   margin-left: -20px;
   padding-left: 20px;
+  padding-right: 22px;
 }
 
 .user-form__container {
@@ -179,7 +188,7 @@
 .user-form__container-more {
   border-top: 3px solid @btn-color;
   margin-top: -45px;
-  margin-bottom: 73px;
+  margin-bottom: 11px;
 }
 
 .user-form__part-more {
@@ -240,6 +249,10 @@
     padding-right: 40px;
   }
 
+  .user-form__container-more {
+    margin-bottom: 74px;
+  }
+
   .user-form__title-contact {
     margin-top: -40px;
   }
@@ -258,6 +271,10 @@
     width: 40px;
     height: 40px;
     top: -6px;
+
+    &:checked {
+      border: solid 2px @btn-color;
+    }
   }
 
   .user-form__label::after {
@@ -348,7 +365,7 @@
 
 @media (min-width: @desktop-width) {
   .user-form {
-    margin-top: 32px;
+    margin-top: 65px;
   }
 
   .user-form__title {
@@ -381,8 +398,9 @@
 
   .user-form__fist-info {
     display: flex;
-    align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 71px;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .user-form__container-form-main {
@@ -429,8 +447,8 @@
   }
 
   .user-form__container-program {
-    margin-left: 80px;
-    padding: 21px 27px 3px;
+    margin: 0;
+    padding: 28px 27px 5px;
   }
 
   .user-form__contact-part {

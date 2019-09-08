@@ -2,8 +2,20 @@
   border-bottom: solid 1px #ededed;
 }
 
+.page-header__logo {
+  &:focus[href],
+  &:hover[href] {
+    opacity: 0.8;
+  }
+
+  &:active[href] {
+    opacity: 0.6;
+  }
+}
+
 .page-header__wrap {
-  padding: 14px 20px 10px;
+  padding-top: 14px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
