@@ -76,7 +76,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #444444;
-  padding-left: 10px;
+  padding-left: 15px;
   font-size: 16px;
 
   &:focus {
@@ -97,14 +97,20 @@
 .user-form__contact-part {
   display: flex;
   align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
 }
 
-.user-form__input-email {
+.user-form__input--email {
   background: url("../img/icon-mail.svg") right 15px center / 18px 14px no-repeat #ffffff;
+  padding-left: 15px;
+  margin-left: 10px;
 }
 
-.user-form__input-phone {
+.user-form__input--phone {
   background: url("../img/icon-phone.svg") right 11px center / 21px 21px no-repeat #ffffff;
+  padding-left: 15px;
+  margin-left: 10px;
 }
 
 .user-form__container-program {
@@ -115,6 +121,7 @@
   margin-top: 35px;
   padding: 10px 15px;
   display: block;
+  font-size: 16px;
 }
 
 .user-form__text {
@@ -128,7 +135,7 @@
 
 .user-form__title {
   font-size: 24px;
-  line-height: 22px;
+  line-height: 24px;
   text-transform: none;
   font-weight: 400;
   margin: 0;
@@ -145,7 +152,7 @@
   flex-direction: column;
   border-bottom: solid 1px #ededed;
   margin: 0 -20px;
-  padding: 0 20px 10px;
+  padding: 0 20px 11px;
 }
 
 .user-form__title-contact {
@@ -156,6 +163,7 @@
   height: 150px;
   min-width: 280px;
   margin: 0;
+  padding: 9px 13px;
 }
 
 .user-form__textarea {
@@ -165,13 +173,13 @@
 
 .user-form__comment {
   border-top: 3px solid @btn-color;
-  margin-bottom: 97px;
+  margin-bottom: 80px;
 }
 
 .user-form__container-more {
   border-top: 3px solid @btn-color;
   margin-top: -45px;
-  margin-bottom: 10px;
+  margin-bottom: 73px;
 }
 
 .user-form__part-more {
@@ -180,28 +188,30 @@
 
 .user-form__title-more {
   margin-top: -38px;
-  padding-right: 20px;
 }
 
 .user-form__title-comment {
-  padding-right: 20px;
   margin-top: -40px;
 }
 
 .user-form__container-contact {
   border-top: 3px solid #68b738;
-  margin-top: 57px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .user-form__inner-more {
   margin-top: 20px;
 }
 
+.user-form__contact-wrap {
+  margin-top: 33px;
+}
+
 @media (min-width: @tablet-width) {
   .user-form {
     font-size: 20px;
     line-height: 1;
+    margin-top: 66px;
   }
 
   .user-form__container {
@@ -217,7 +227,7 @@
 
   .user-form__part {
     margin-top: 0;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
     padding: 0;
   }
 
@@ -227,15 +237,15 @@
     max-width: 650px;
     margin-left: -40px;
     padding-left: 40px;
+    padding-right: 40px;
   }
 
   .user-form__title-contact {
-    margin-top: -27px;
-    padding-right: 60px;
+    margin-top: -40px;
   }
 
   .user-form__title-comment {
-    margin-top: -58px;
+    margin-top: -42px;
   }
 
   .user-form__label {
@@ -264,8 +274,12 @@
   .user-form__inner-more {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 11px;
+    margin-top: 55px;
+    margin-bottom: 15px;
+  }
+
+  .user-form__fist-info {
+    margin-bottom: 43px;
   }
 
   .user-form__part-more {
@@ -279,7 +293,7 @@
   }
 
   .user-form__title-more {
-    margin-top: -55px;
+    margin-top: -40px;
   }
 
   .user-form__btn {
@@ -311,8 +325,13 @@
     margin-left: 20px;
   }
 
+  .user-form__contact-wrap {
+    margin-top: 68px;
+    margin-bottom: 103px;
+  }
+
   .user-form__contact-part {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .user-form__input-comment {
@@ -323,34 +342,47 @@
   }
 
   .user-form__textarea {
-    margin: 48px 0 30px;
+    margin: 68px 0 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .user-form {
+    margin-top: 32px;
+  }
+
   .user-form__title {
-    padding: 0 40px 0 0;
+    margin-left: -40px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .user-form__container {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 570px;
   }
 
   .user-form__container-contact {
-    margin-top: 65px;
+    margin-bottom: 10px;
   }
 
   .user-form__title-contact {
-    margin: -44px 0 0;
+    margin-top: -44px;
   }
 
   .user-form__title-comment {
-    margin: -45px 21px 0;
+    margin-top: -41px;
   }
 
   .user-form__title-more {
-    margin: -47px 21px 0;
+    margin-top: -47px;
   }
 
   .user-form__fist-info {
     display: flex;
     align-items: center;
+    margin-bottom: 48px;
   }
 
   .user-form__container-form-main {
@@ -359,14 +391,13 @@
     justify-content: space-between;
   }
 
-  .user-form__container {
-    margin: 0;
-    flex: 0 0 570px;
-  }
-
   .user-form__input-comment {
     width: 1220px;
     margin: 64px 0 39px;
+  }
+
+  .user-form__container-more {
+    margin-bottom: 80px;
   }
 
   .user-form__inner-more {
@@ -399,13 +430,22 @@
 
   .user-form__container-program {
     margin-left: 80px;
+    padding: 21px 27px 3px;
   }
 
-  .user-form__input-email {
-    width: 486px;
+  .user-form__contact-part {
+    flex: 0 0 570px;
   }
 
-  .user-form__input-phone {
-    width: 472px;
+  .user-form__contact-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 66px;
+    margin-bottom: 106px;
+  }
+
+  .user-form__textarea {
+    margin: 3px 0 15px;
   }
 }

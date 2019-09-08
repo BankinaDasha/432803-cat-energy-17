@@ -1,14 +1,20 @@
-.page-header__wrap {
-  padding: 14px 20px 10px;
+.page-header {
   border-bottom: solid 1px #ededed;
 }
 
+.page-header__wrap {
+  padding: 14px 20px 10px;
+}
+
 @media (min-width: @tablet-width) {
+  .page-header {
+    border: none;
+  }
+
   .page-header__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: none;
     padding: 24px 30px 16px;
   }
 
