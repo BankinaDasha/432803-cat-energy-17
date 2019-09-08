@@ -38,13 +38,16 @@
         </div>
     </header>
     <main>
-        <div class="wrap-form form-page">
+      <div class="form-page">
+        <div class="wrap-form">
                 <h1 class="form-page__title title-section">Подбор программы</h1>
                 <p class="form-page__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-
+        </div>
                 <form class="user-form" action="#" name="user-form">
-                  <div class="user-form__fist-info">
+
+                      <div class="wrap-form user-form__fist-info">
                         <div class="user-form__container user-form__container-info">
+
                             <p class="user-form__part">
                                 <label for="user-name">Имя:*</label>
                                 <input class="user-form__input" placeholder="Барсик" type="text" id="user-name" name="user-name" value="" />
@@ -57,9 +60,11 @@
                                 <label for="user-age">Возраст  (лет):</label>
                                 <input class="user-form__input" placeholder="7" type="text" id="user-age" name="user-age" value="" />
                             </p>
-                        </div>
-                        <div class="user-form__container user-form__container-program user-form__input-btn">
 
+                        </div>
+                        <div class="user-form__container user-form__input-btn">
+
+                              <div class="user-form__container-program">
                             <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="losing-weight" checked>
                             <label class="user-form__label" for="losing-weight">Похудение</label>
                             <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="add-mass">
@@ -67,9 +72,12 @@
                             <input class="visually-hidden user-form__input-radio" name="user-form__program" type="radio" id="advice">
                             <label class="user-form__label" for="advice">Не знаю (Нужен ваш совет)</label>
 
-                        </div>
+                          </div>
+                              </div>
+
                       </div>
                     <div class="user-form__container-contact">
+                        <div class="wrap-form">
                         <p class="user-form__title user-form__title-contact">Контактные данные (владельца кота)</p>
                         <div class=" wrap-form__contact">
                         <p class="user-form__contact-part">
@@ -82,14 +90,18 @@
                         </p>
                     </div>
                     </div>
+                    </div>
                     <div class="user-form__comment">
+                        <div class="wrap-form">
                         <p class="user-form__title user-form__title-comment">Комментарий</p>
-
+                          <p class="user-form__textarea">
                     <textarea class="user-form__input user-form__input-comment" name="расскажите обо всех повадках кота" placeholder="Расскажите обо всех повадках кота"></textarea>
-
+                          </p>
                   </div>
-
+                    </div>
                     <div class="user-form__container-more">
+                      <div class="wrap-form">
+
                         <p class="user-form__title user-form__title-more">Дополнительно</p>
                     <div class="user-form__inner-more">
                         <p class="user-form__part-more">
@@ -112,6 +124,7 @@
                         <div class="user-form__btn-more">
                         <a href="#" class="btn user-form__btn"> Отправить заявку </a>
                         <p class="user-form__text">* — Обязательные поля</p>
+                        </div>
                         </div>
                     </div>
                 </form>
