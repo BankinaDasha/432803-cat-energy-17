@@ -18,6 +18,14 @@
 
 .page-footer__logo {
   align-self: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo-image {
@@ -28,12 +36,21 @@
   width: 39px;
   height: 43px;
   margin: 0 -6px;
+  fill: #666666;
 }
 
 .page-footer__copyright-text {
   font-size: 16px;
   line-height: 1;
   margin: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__logo-academy {
@@ -42,6 +59,15 @@
   justify-content: space-between;
   padding: 18px 0 20px;
   align-items: center;
+
+  &:hover .page-footer__copyright-image {
+    fill: @btn-color;
+  }
+
+  &:active .page-footer__copyright-image {
+    fill: @btn-color;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

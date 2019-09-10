@@ -44,6 +44,10 @@
     border-radius: 100%;
     top: 9px;
     left: 9px;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -54,6 +58,7 @@
 .user-form__label-more {
   &::after {
     background: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
     width: 22px;
     height: 17px;
     display: none;
@@ -284,6 +289,11 @@
     left: 11px;
     width: 18px;
     height: 18px;
+  }
+
+  .user-form__label-more::after {
+    width: 22px;
+    height: 17px;
   }
 
   .user-form__comment {
